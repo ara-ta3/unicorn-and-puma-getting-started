@@ -10,4 +10,4 @@ log:
 	mkdir -p $@
 
 run_puma:
-	$(BUNDLE) exec puma ./app.rb 
+	$(BUNDLE) exec puma --config ./puma.rb
