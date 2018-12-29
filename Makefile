@@ -1,7 +1,7 @@
-BUNDLE=$(shell which bundle)
+BUNDLE=bundle
 
 install:
-	$(BUNDLE) install
+	$(BUNDLE) install --path vendor/bundle
 
 run_unicorn: log
 	$(BUNDLE) exec unicorn -c unicorn.rb
